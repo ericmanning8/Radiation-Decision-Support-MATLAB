@@ -1,0 +1,11 @@
+MATLAB Input Parameters: 
+
+structureSetInfo – parsed dicom dataROI_Item_no– the ROI numberWidth – the width of contour blockHeight – the height of contour blockPatient_number – the patient ID in the database
+X : a vector containing a sequence of monotone increasing values of the independent
+patient1 : int , PatientID of first patient (query patient) to comparepatient2 : int, PatientID of second patient (historical case) to compareroiName : string, ROI to compare between patients
+F1, F2 - feature vectors of respective signatures – e.g. OVHW1, W2 - weights of the featuresFunc - function which computes the ground distance between two feature vectors
+StructureSetInfo : struct, Contains similar field names to dicominfo struct from structureset.dcmin UCLA_PR_5ROINumber : Scalar. Each ROI is assigned a scalar number for ROISequence inStructureSetInfo (fields are Item_1, Item_2 .. ).	width : scalar, width of a CT image	height : scalar, height of a CT image	PatientID : scalar	ctStudyInstanceUID : scalar, StudyInstanceUID in structureset.dcm	ctSeriesInstanceUID : scalar, SeriesInstanceUID in structureset.dcm
+	
+	rowSpacing ???? These 3 appeared hard coded into Veda's scripts - not entirely sure if they're necessary 
+	columnSpacing ????
+	sliceSpacing ????
